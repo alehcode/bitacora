@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.botones{
+	display: inline-block;
+	background-color: yellow;
+	height: 30px;
+	width: 100px;
+	margin: 2%;
+
+	text-align: center;
+}
+.escribirTexto {
+	width: 100%;
+	
+	text-align: center;
+}
+.botonesDos{
+	width: 100px;
+}
+.titulo{
+	width: 50%;
+}
+.contenedorTexto{
+	width: 50%;
+	margin-left: 300px;
+
+}
