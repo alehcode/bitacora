@@ -35,10 +35,10 @@ window.addEventListener("load", function(){
             var textarea = document.createElement("textarea");
             var btnMandar = document.createElement("button");
             var btnCerrar= document.createElement("button");
-
+            
             btnMandar.textContent="Publicar";
             btnCerrar.textContent="Cerrar";
-
+            
             textarea.classList.add("escribirTexto");
             titulo.classList.add("titulo");
             btnMandar.classList.add("botonesDos");
@@ -53,10 +53,6 @@ window.addEventListener("load", function(){
 
             btnMandar.addEventListener("click", publicacion);
 
-            btnCerrar.addEventListener("click", function(){
-                this.parentElement.remove();
-            });
-
             function publicacion(){
                 var cajaPubli = document.createElement("div");
                 var cajatitle = document.createElement("div");
@@ -69,7 +65,7 @@ window.addEventListener("load", function(){
                 var hora =tiempo.getHours();
                 var min=tiempo.getMinutes();
 
-
+                
 
                 if(min < 10){
                     min = "0" + min;
@@ -84,17 +80,13 @@ window.addEventListener("load", function(){
 
                 cajatitle.innerText= titulo.value;
                 imprimirTexto.insertBefore(cajatitle,imprimirTexto.childNodes[0]);
-
+                
                 imprimirTexto.insertBefore(imprimirHora,imprimirTexto.childNodes[2]);
 
 
             }
 
-
+            
         }
     });
 });
-
-
-    // var botones = document.createElement("button");
-
